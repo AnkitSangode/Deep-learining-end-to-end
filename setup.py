@@ -1,4 +1,4 @@
-import setuptools
+from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
@@ -6,13 +6,13 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "Chicken-Disease-Classification--Project"
+REPO_NAME = "Deep-learining-end-to-end"
 AUTHOR_USER_NAME = "Ankit"
-SRC_REPO = "cnnClassifier"
+SRC_REPO = "CNN_Classifier"
 AUTHOR_EMAIL = "ankit.sangode0911@gmail.com"
 
 
-setuptools.setup(
+setup(
     name=SRC_REPO,
     version=__version__,
     author=AUTHOR_USER_NAME,
@@ -25,5 +25,5 @@ setuptools.setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=find_packages(where="src")
 )
