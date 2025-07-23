@@ -7,3 +7,4 @@
 7. update the pipeline
 8. update the main.py
 9. update the dvc.yaml
+10. Deploy
